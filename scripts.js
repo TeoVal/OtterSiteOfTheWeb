@@ -12,3 +12,21 @@ function initMap() {
       map: map,
     });
   }
+
+
+
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    document.getElementById("logo").style.fontSize = "20px";
+    document.getElementById("topotter").style.height = "30px";
+    document.getElementById("topotter").style.width = "35px";
+
+  } else {
+    document.getElementById("logo").style.fontSize = "50px";
+    document.getElementById("topotter").style.height = "70px";
+    document.getElementById("topotter").style.width = "75px";
+
+  }
+}
