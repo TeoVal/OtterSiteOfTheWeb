@@ -20,6 +20,7 @@ function initMap() {
 function scrollFunction() {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
     document.getElementById("logo").style.fontSize = "20px";
+    // document.getElementsById("navbar").style.height = "80px";
     document.getElementById("topotter").style.height = "30px";
     document.getElementById("topotter").style.width = "35px";
 
@@ -30,3 +31,4 @@ function scrollFunction() {
 
   }
 }
+

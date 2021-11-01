@@ -1,20 +1,6 @@
-@charset "UTF-8";@font-face {
-    font-family: "Steelfish";
-    src: url('../fonts/steelfish/steelfish_eb-webfont.eot');
-    src: url('../fonts/steelfish/steelfish_eb-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/steelfish/steelfish_eb-webfont.woff') format('woff'), url('../fonts/steelfish/steelfish eb.otf') format('opentype');
-    font-weight: 800;
-  }
-  @font-face {
-    font-family: "Steelfish";
-    src: url('../fonts/steelfish/steelfish_bd-webfont.eot');
-    src: url('../fonts/steelfish/steelfish_bd-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/steelfish/steelfish_bd-webfont.woff') format('woff'), url('../fonts/steelfish/steelfish bd.otf') format('opentype');
-    font-weight: bold;
-  }
-
-
   .navbar {
     margin-bottom: 10px;
-    min-height: 80px;
+    /* min-height: 80px; */
     overflow: hidden; 
     padding:-70px 10px;
     transition: 0.4s;
@@ -22,24 +8,40 @@
     position: fixed;
     top: 0;
     z-index: 99;
+    /* height:7vh; */
   }
   
   .navbar a {
     float: right;
-    color: black;
     text-align: right;
-    padding: 12px;
+    padding:  1px;
     text-decoration: none;
     font-size: 15px;
     line-height: 25px;
     border-radius: 4px;
   }
 
-  .dropdown-menu.show {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 400px;
+  .navbar li{
+    display:grid;
+    margin:1vh;
+    text-transform: uppercase;
+  }
+
+.dropdown-divider{
+  margin:0%;
+  border-top: none;
+  padding:0px;
+}
+
+.dropdown-item{
+  color:gray;
+}
+
+.dropdown-menu{
+  padding:0px;
+  border:none;
+  background-color:#1fe0;
+  padding-top: 20px;
 }
   
   #logo {
@@ -62,9 +64,11 @@
 
   }
 
-  /* .navbar-nav{
+  .navbar-nav{
     align-items: flex-end;
-  } */
+    align-items: flex-end;
+    flex-direction: column;
+  }
 
 .carousel {
   position: relative;
@@ -92,6 +96,7 @@
 
 body {
   padding-top: 100px;
+  font-family:'JetBrains Mono', monospace;
 }
 
   a {
@@ -108,6 +113,14 @@ body {
   h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 1px;
+  }
+
+  p{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:5vh 5vh;
   }
   
   .centered-text {
@@ -148,9 +161,11 @@ body {
   }
   #footer h1 {
     margin-bottom: 25px;
+    /* display:inline; */
   }
   #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
     color: #eee;
+    display:inline;
   }
   #footer ul {
     margin: 0;
@@ -164,6 +179,11 @@ body {
   }
   #footer ul a:hover {
     color: #eee;
+  }
+
+  #footer p{
+    align-items: flex-start;
+    padding:0px;
   }
 
 #map {
